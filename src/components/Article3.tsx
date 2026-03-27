@@ -41,8 +41,6 @@ export default function Article3() {
             className="w-full  "
           />
         </div>
-
-
       </div>
     </section>
   );
