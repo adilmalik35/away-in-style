@@ -7,7 +7,7 @@ export default function Article() {
         {/* Author */}
         <div className="flex items-center gap-3 mb-6">
           <img
-            src="/avatar.png"
+            src={`${import.meta.env.BASE_URL}avatar.png`} 
             className="w-[58px] h-[58px] rounded-full object-cover"
           />
           <div>
@@ -27,8 +27,9 @@ export default function Article() {
           <h1 className="text-[34px] leading-[40px] font-bold max-w-[650px]">
             Best Hotel In Asia In Asia What Is Your
           </h1>
-  {/* Circular Search Button */}
-          <button className="w-[40px] h-[40px] md:w-[58px] md:h-[58px] rounded-full border-2 border-orange-400 text-orange-500 text-[10px] md:text-[12px] flex items-center justify-center hover:bg-orange-500 hover:text-white transition flex-shrink-0">
+
+         {/* Circular Search Button */}
+          <button className="w-[40px] h-[40px] md:w-[58px] md:h-[58px] rounded-full border-2 border-orange-400 text-orange-500 text-[10px] md:text-[12px] flex items-center justify-center hover:bg-orange-500 hover:text-white">
             Search
           </button>
         </div>
@@ -48,7 +49,7 @@ export default function Article() {
         {/* Feature Image */}
         <div className="mt-10 shadow-lg">
           <img
-            src="/a_bg_1.png"
+            src={`${import.meta.env.BASE_URL}a_bg_1.png`}
             className="w-full  "
           />
         </div>
@@ -56,22 +57,19 @@ export default function Article() {
         {/* Social Actions */}
         <div className="flex items-center gap-6 mt-6 text-[13px] text-gray-600">
           <span className="flex items-center gap-1 text-orange-500">
-            <img src="/aic_like.png" alt="heart" className="w-[23px] h-[18px]" />
-            15
+            <img src={`${import.meta.env.BASE_URL}aic_like.png`} alt="repost" className="w-[20px] h-[10px]" />            15
           </span>
              <span className="flex items-center gap-1 cursor-pointer">
             share
-            <img src="/aic_share.png" alt="share" className="w-[12px] h-[12px]" />
+            <img src={`${import.meta.env.BASE_URL}aic_share.png`} alt="share" className="w-[12px] h-[12px]" />
           </span>
           <span className="flex items-center gap-1 cursor-pointer">
             repost
-            <img src="/aic_repost.png" alt="repost" className="w-[20px] h-[10px]" />
-          </span>
+            <img src={`${import.meta.env.BASE_URL}aic_repost.png`} alt="repost" className="w-[20px] h-[10px]" />          </span>
        
           <span className="flex items-center gap-1 cursor-pointer">
             comments 
-            <img src="/aic_comment.png" alt="comments" className="w-[22px] h-[18px]" />
-              88
+            <img src={`${import.meta.env.BASE_URL}aic_comment.png`} alt="comments" className="w-[22px] h-[18px]" />              88
           </span>
         </div>
 
@@ -86,10 +84,9 @@ export default function Article() {
               />
 
               <div className="flex items-center gap-2 flex-shrink-0">
-                <img src="/ic_upload.png" alt="icon 1" className="w-7 h-7 object-cover rounded" />
-                <img src="/ic_play.png" alt="icon 2" className="w-7 h-7 object-cover rounded" />
-                <img src="/ic_share.png" alt="icon 3" className="w-7 h-7 object-cover rounded" />
-              </div>
+                 <img src={`${import.meta.env.BASE_URL}ic_upload.png`} alt="icon 1" className="w-7 h-7 object-cover rounded" />
+                <img src={`${import.meta.env.BASE_URL}ic_play.png`} alt="icon 2" className="w-7 h-7 object-cover rounded" />
+                <img src={`${import.meta.env.BASE_URL}ic_share.png`} alt="icon 3" className="w-7 h-7 object-cover rounded" />      </div>
             </div>
           </div>
         </div>
