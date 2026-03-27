@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="w-[25px] h-[25px] bg-[#ff9c45] flex items-center justify-center rounded-sm hover:bg-orange-500 transition"
               >
-                <img src="/down_arrow.png" alt="menu" className="w-[15px] h-[10px]" />
+                <img src={`${import.meta.env.BASE_URL}down_arrow.png`} alt="menu" className="w-[15px] h-[10px]" />
               </button>
 
               {/* Dropdown Menu */}
@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
           <span className='text-[#6B6969]'>Join us 30K</span>
 
           <div className="flex items-center justify-center">
-            <img src="/support.png" alt="icon 1" className="w-[45px] h-[33px]" />
+            <img src={`${import.meta.env.BASE_URL}support.png`} alt="icon 1" className="w-[45px] h-[33px]" />
           </div>
         </div>
 

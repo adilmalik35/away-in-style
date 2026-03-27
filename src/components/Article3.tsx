@@ -7,7 +7,7 @@ export default function Article3() {
         {/* Author */}
         <div className="flex items-center gap-3 mb-6">
           <img
-            src="/avatar.png"
+            src={`${import.meta.env.BASE_URL}avatar.png`}
             className="w-[58px] h-[58px] rounded-full object-cover"
           />
           <div>
@@ -37,7 +37,7 @@ export default function Article3() {
         {/* Feature Image */}
         <div className="mt-10 shadow-lg">
           <img
-            src="/a_bg_4.png"
+            src={`${import.meta.env.BASE_URL}a_bg_4.png`}
             className="w-full  "
           />
         </div>

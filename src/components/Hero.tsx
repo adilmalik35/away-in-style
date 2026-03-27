@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="relative w-full h-[520px]">
         {/* Image */}
         <img
-          src="/cover.png"
+          src={`${import.meta.env.BASE_URL}cover.png`}
           className="w-full h-full object-cover"
         />
       </div>

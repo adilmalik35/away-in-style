@@ -7,7 +7,7 @@ export default function Article2() {
         {/* Feature Image */}
         <div className="mt-10 shadow-lg">
           <img
-            src="/a_bg_3.png"
+            src={`${import.meta.env.BASE_URL}a_bg_3.png`}
             className="w-full  "
           />
         </div>
