@@ -51,22 +51,32 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full bg-white shadow-sm">
       {/* Top Row */}
-      <div className="relative w-full border-b border-gray-200 px-6 py-3">
-        <div className=" mx-auto">
-          <div className="flex items-center justify-between">
-            <h1 className="text-sm md:text-[36px] font-bold text-black tracking-wide">AWAY IN STYLE</h1>
+      <div className="w-full border-b border-gray-200 px-4 py-3">
+        <div className="mx-auto ">
+          <div className="flex items-center justify-between gap-2">
+            {/* Left: Logo */}
+            <h1 className="text-xs md:text-xl lg:text-[36px] font-bold text-black tracking-wide whitespace-nowrap">
+              AWAY IN STYLE
+            </h1>
 
+            {/* Center: tagline */}
+            <p className="flex-1 text-center text-[8px] md:text-[10px] lg:text-[12px] text-gray-500 text-[#6B6969] px-2 truncate">
+              Asia's Premier A.I. Powered Lifestyle Platform
+            </p>
+
+            {/* Right: dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="w-[25px] h-[25px] bg-[#ff9c45] flex items-center justify-center rounded-sm hover:bg-orange-500 transition"
+                className="w-6 h-6 flex items-center justify-center rounded-sm bg-[#ff9c45] hover:bg-orange-500 transition"
               >
-              
-              <img src={`${import.meta.env.BASE_URL}down_arrow.png`} alt="menu" className="w-[15px] h-[10px]" />              </button>
-              {/* Dropdown Menu */}
+                <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded shadow-lg z-50 w-64">
-                  {/* Search Box */}
                   <div className="p-3 border-b border-gray-200">
                     <input
                       type="text"
@@ -76,8 +86,6 @@ const Navbar: React.FC = () => {
                       className="w-full px-3 py-2 border border-gray-300 rounded text-[11px] md:text-[13px] focus:outline-none focus:border-orange-400"
                     />
                   </div>
-
-                  {/* Menu Items */}
                   <div className="max-h-96 overflow-y-auto">
                     {filteredItems.map((item, index) => (
                       <button
@@ -96,48 +104,28 @@ const Navbar: React.FC = () => {
               )}
             </div>
           </div>
-
-          <p className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] md:text-[12px] text-gray-500 text-[#6B6969]">
-            Asia's Premier A.I. Powered Lifestyle Platform
-          </p>
         </div>
       </div>
 
       {/* Bottom Row */}
-      {/* <div className="relative w-full border-b border-gray-200 bg-white">
-        <div className=" mx-auto flex items-center justify-end gap-4 md:gap-6 px-6 py-2 text-[8px] md:text-[12px] text-gray-600">
-          <span className='text-[#6B6969]'>Sign in</span>
-          <span className='text-[#6B6969]'>Message</span>
-          <span className='text-[#6B6969]'>Join us 30K</span>
+      <div className="w-full border-b border-gray-200 bg-white">
+        <div className="mx-auto] flex items-center justify-between gap-3 px-4 py-2 text-[8px] md:text-[10px] text-gray-600">
+        
+          <div className="flex-1  max-w-[450px] items-center gap-4 md:gap-6">
+          </div>
 
-          <div className="flex items-center justify-center">
-            <img src="/support.png" alt="icon 1" className="w-[45px] h-[33px]" />
+         {/* Hk Time center text */}
+          <span className="flex-1 text-center text-[#6B6969]">HK {hkTime}</span>
+            
+            {/* Right */}
+          <div className="flex items-center gap-2 md:gap-3">
+            <span className="text-[#6B6969] whitespace-nowrap">Sign in</span>
+            <span className="text-[#6B6969] whitespace-nowrap">Message</span>
+            <span className="text-[#6B6969] whitespace-nowrap">Join us 30K</span>
+            <img src={`${import.meta.env.BASE_URL}support.png`} alt="support" className="w-[30px] h-[22px] md:w-[45px] md:h-[33px]" />
           </div>
         </div>
-
-        <div className="text-[#6B6969] absolute  flex items-center justify-start md:justify-center text-[8px] md:text-[12px] text-gray-600 font-medium pointer-events-none">
-          HK {hkTime}
-        </div>
-      </div> */}
-
-   <div className="relative w-full border-b border-gray-200 bg-white">
-        <div className=" mx-auto flex items-center justify-end gap-4 px-6 py-2 text-[8px] md:text-[10px] text-gray-600">
-          <span className='text-[#6B6969]'>Sign in</span>
-          <span className='text-[#6B6969]'>Message</span>
-          <span className='text-[#6B6969]'>Join us 30K</span>
-
-          <div className="flex items-center justify-center">
-            <img src={`${import.meta.env.BASE_URL}support.png`} alt="icon 1" className="w-[45px] h-[33px]" />          </div>
-        </div>
-
-        <div className="text-[#6B6969] absolute inset-0 flex items-center justify-center text-[8px] md:text-[10px] text-gray-600 font-medium pointer-events-none">
-          HK {hkTime}
-        </div>
-
-
-        </div>
-
-
+      </div>
     </div>
   );
 };
