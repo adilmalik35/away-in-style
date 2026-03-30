@@ -61,9 +61,8 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="w-[25px] h-[25px] bg-[#ff9c45] flex items-center justify-center rounded-sm hover:bg-orange-500 transition"
               >
-                <img src="/down_arrow.png" alt="menu" className="w-[15px] h-[10px]" />
-              </button>
-
+              
+              <img src={`${import.meta.env.BASE_URL}down_arrow.png`} alt="menu" className="w-[15px] h-[10px]" />              </button>
               {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded shadow-lg z-50 w-64">
@@ -128,8 +127,7 @@ const Navbar: React.FC = () => {
           <span className='text-[#6B6969]'>Join us 30K</span>
 
           <div className="flex items-center justify-center">
-            <img src="/support.png" alt="icon 1" className="w-[45px] h-[33px]" />
-          </div>
+            <img src={`${import.meta.env.BASE_URL}support.png`} alt="icon 1" className="w-[45px] h-[33px]" />          </div>
         </div>
 
         <div className="text-[#6B6969] absolute inset-0 flex items-center justify-center text-[8px] md:text-[10px] text-gray-600 font-medium pointer-events-none">
