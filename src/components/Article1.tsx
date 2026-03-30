@@ -24,8 +24,8 @@ export default function Article1() {
         {/* Title + Search */}
         <div className="flex justify-between items-start mb-6">
 
-          <h1 className="text-[34px] leading-[40px] font-bold max-w-[650px]">
-            Dior Presents The Cruise Collection
+          <h1 className="text-xl md:text-[34px] leading-[30px] md:leading-[40px] max-w-[650px]">
+            Dior Presents The Cruise<br />Collection
           </h1>
 
           {/* Circular Search Button */}
@@ -35,7 +35,7 @@ export default function Article1() {
         </div>
 
         {/* Description */}
-        <p className="text-[14px] text-gray-600 leading-[22px] max-w-[700px]">
+        <p className="text-sm md:text-[14px] text-gray-600 leading-[20px] md:leading-[22px] max-w-[700px]">
             This October, W Maldives invites guests to an unforgettable culinary chapter as part of its Flavors Unscripted series — a two-night, six-hands collaboration bringing together three of Bali’s most sought-after chefs: Benjamin Cross of Mason and Bar Vera, Stephen Moore of Shelter ...
           <span className="text-orange-500 cursor-pointer ml-2">
             View Content
@@ -51,7 +51,7 @@ export default function Article1() {
         </div>
 
         {/* Social Actions */}
-        <div className="flex items-center gap-6 mt-6 text-[13px] text-gray-600">
+        <div className="flex items-center gap-4 md:gap-6 mt-6 text-[13px] text-gray-600">
           <span className="flex items-center gap-1 text-orange-500">
             <img src={`${import.meta.env.BASE_URL}aic_like.png`} alt="heart" className="w-[23px] h-[18px]" />
             15

@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <div className="w-full flex flex-col min-h-screen bg-white">
             <Navbar />
             <Hero />
-            <Article />
+             <Article />
             <Article1 />
             <Article2 />
             <Article3 />

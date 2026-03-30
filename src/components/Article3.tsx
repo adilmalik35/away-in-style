@@ -24,8 +24,8 @@ export default function Article3() {
         {/* Title + Search */}
         <div className="flex justify-between items-start mb-6">
 
-          <h1 className="text-[34px] leading-[40px] font-bold max-w-[650px]">
-            An Interview with Jenifer Lawrence    
+          <h1 className="text-xl md:text-[34px] leading-[30px] md:leading-[40px] font-bold max-w-[650px]">
+            An Interview with Jenifer<br />Lawrence    
                   </h1>
 
           {/* Circular Search Button */}
